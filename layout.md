@@ -1,4 +1,5 @@
 Abstract.tex
 section_Introduction__.tex
+section_Algorithms__.tex
 section_Discussion__.tex
 section_Acknowledgements__.tex
