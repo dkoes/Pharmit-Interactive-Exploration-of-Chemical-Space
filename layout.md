@@ -5,7 +5,6 @@ section_Inputs_subsection_Pharmacophore_Queries__.tex
 section_Search_subsection_Filters_subsection__.tex
 section_Results_Annotations_Iterative_search__.tex
 section_Algorithms_cite_26085707_cite__.tex
-section_Search__.tex
 section_Library_Creation__.tex
 section_Discussion__.tex
 section_Acknowledgements_We_thank_Charles__.tex
