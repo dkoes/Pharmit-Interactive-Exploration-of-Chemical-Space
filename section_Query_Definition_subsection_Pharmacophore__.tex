@@ -1,5 +1,34 @@
 \section{Query Definition}
 
+Table of Contents:
+Getting Started
+Initiating a Search
+Visualization
+Pharmacophore Representations
+Shape Constraints
+Hit Reduction and Feasibility Screening
+Database Selection
+Saving and Loading Sessions
+Managing Search Results
+Saving and Minimizing Results
+User-submitted Databases
+Related Software
+Additional Help
+Getting Started
+pharmit is a web server that facilitates virtual screening: it enables users to search for small molecules based on their structural and chemical similarity to another small molecule, with the goal of identifying those that bind to a target molecule (typically a protein receptor or enzyme). The search can take as input either a small molecule, a set of pharmacophore features (which will be subsequently described in greater detail), or both a protein and a small molecule for which a putative binding pose is known. These may be obtained from the Protein Data Bank (PDB) or uploaded by the user directly, using one of the two options provided on the main page.
+
+
+Getting started
+Initiating a Search
+A structure can be obtained directly from the PDB by entering its four-character PDB identifier in the first text box after "start from PDB". A list of possible small molecules will be generated automatically in the second box, from which the user may choose a ligand of interest. Binding site waters may be excluded entirely, used as part of the ligand as optional pharmacophore features to include in the similarity search, or used as part of the receptor to identify which pharmacophore features of the ligand are relevant to binding. To proceed with the search, the user should next choose "submit". 
+Alternatively the user may first choose "enter pharmit search" in order to upload structural files. After being redirected to the search page, choose "Load Features..." to upload a small molecule structure in sdf, pdb, mol2, or xyz format or a pharmacophore query file in MOE, LigBuilder, LigandScout, or Pharmer format. If a receptor is provided, it should be one for which the binding pose of the provided ligand is known, or to which the ligand was previously docked. pharmit will not dock the two compounds, and since the receptor is used to identify which pharmacophore features of the ligand are relevant to binding, providing a pair of structures that are oriented arbitrarily will fail to identify a relevant pharmacophore. The receptor may be provided in sdf, pdb, mol2, or xyz format.
+
+
+Loading structures
+Visualization
+After the desired structures are provided, pharmit will identify all pharmacophore features present in the ligand if a ligand structure rather than a pharmacophore query file was provided. If a receptor structure was provided, it will identify which of these features are relevant to the interaction between the protein-ligand pair using distance cutoffs between interacting features and will display only these interacting features. Next, it will center the features and use a set of default visualization options to display the provided structures, including the electrostatic surface of the receptor. If the user is dissatisfied with the default visualization scheme, they may scroll down to the "Visualization" menu in the left sidebar and toggle the options as desired. In particular, if the electrostatic surface of the receptor is obscuring the pharmacophore features, receptor surface opacity may be reduced and at the lowest setting becomes entirely transparent. In the graphical display window, the left mouse button may be used to rotate the scene and the right mouse button or center wheel may be used to zoom. Clicking on spheres - both pharmacophore spheres and shape constraint spheres - toggles between a solid and wire display. In order to maximize the viewable graphical display area, the sidebar may be hidden by pressing the left-pointing arrowhead at the top right of the sidebar.
+
+
 \subsection{Pharmacophore Queries}
 A pharmacophore \cite{Koes_2015rev,Yang_2010,Leach_2010} defines the essential features of an interaction, such as hydrogen bond, charged, hydrophobic, or aromatic features. Importantly, a pharmacophore includes the spatial arrangement of these features and pharmacophore
 
