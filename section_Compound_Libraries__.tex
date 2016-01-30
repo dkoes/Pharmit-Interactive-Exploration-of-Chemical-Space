@@ -1,1 +1,15 @@
 \section{Compound Libraries}
+
+Unique to Pharmit is the ability to select from a number of provided compound libraries or to submit a custom library for screening.  The library to screen is selected through a pull down menu in the search button, as shown in Figure~\ref{mainfig}.
+
+\subsection{Provided Libraries}
+
+Large libraries corresponding to compound catalogs from a variety of sources are provided and periodically updated to ensure continued relevance, especially as with regards to compound availability from commercial sources.  Currently, the Pharmit has pre-built libraries generated from CHEMBL2.0 \cite{Gaulton_2011}, ChemDiv, MolPort, NCI Open Chemical Repository, and PubChem, 
+ 
+ 
+ as well as several publicly available user-contributed libraries and any public or private libraries the user has personally submitted using the "create" menu accessible from the pharmit main page. Once a database is selected, pressing the search button initiates the search. 
+
+\subsection{Library Creation}
+Users may submit databases to be used for searches using the "create" area on the main page. Creating databases
+If a user chooses to proceed as a guest, no private databases may be submitted and public databases the user submits have a maximum size of 10,000 conformers. If the user creates an account and logs in, the user may create one private database with at most 1,000,000 conformers and public databases the user submits may have at most 10,000,000 conformers. The database files should be in SMILES or sdf format. Conformers will be automatically generated from SMILES strings, but the structures contained in the sdf files will be used directly and should therefore be created using a high quality conformer generator. File sizes are capped at 200MB, so submitting a compressed file is recommended. The number of permitted conformers in a database may be extended by emailing a short justification to dkoes@pitt.edu. 
+Database submission form
