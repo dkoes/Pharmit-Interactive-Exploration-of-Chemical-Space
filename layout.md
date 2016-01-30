@@ -3,6 +3,7 @@ section_Introduction_There_are_a__.tex
 section_Compound_Libraries__.tex
 section_Inputs_subsection_Pharmacophore_Queries__.tex
 section_Search_subsection_Filters_subsection__.tex
+section_Results_Annotations_Iterative_search__.tex
 section_Algorithms_cite_26085707_cite__.tex
 section_Search__.tex
 section_Library_Creation__.tex
