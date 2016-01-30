@@ -4,14 +4,12 @@ Unique to Pharmit is the ability to select from a number of provided compound li
 
 \subsection{Provided Libraries}
 
-Large libraries corresponding to compound catalogs from a variety of sources are provided and periodically updated to ensure continued relevance, especially as with regards to compound availability from commercial sources.  Currently, Pharmit has pre-built libraries generated from CHEMBL2.0 \cite{Gaulton_2011}, ChemDiv (\url{www.chemdiv.com}), MolPort, NCI Open Chemical Repository, and PubChem, 
- 
- 
- Although a search is limited to the compounds of the selected library, all compounds within the provided libraries are cross-annotated so, for example, it is possible to look up the PubChem record of a compound found by searching the MolPort library.
- 
- as well as several publicly available user-contributed libraries and any public or private libraries the user has personally submitted using the "create" menu accessible from the pharmit main page. Once a database is selected, pressing the search button initiates the search. 
+Large libraries corresponding to compound catalogs from a variety of sources are provided and periodically updated to ensure continued relevance, especially as with regards to compound availability from commercial sources.  Currently, Pharmit has pre-built libraries generated from CHEMBL20 \cite{Gaulton_2011}, with $>1.3$ million compounds; ChemDiv (\url{www.chemdiv.com}), with $>1.4$ million compounds; MolPort (\url{www.molport.com}), with $>6.5$ million compounds; the NCI Open Chemical Repository (\url{dtp.cancer.gov}), with $>125,000$ compounds; and PubChem \cite{Kim_2015}, with $>66$ million compounds. 
+ Although a search is limited to the compounds of the selected library, all compounds within these provided libraries are cross-annotated so, for example, it is possible to look up the PubChem record of a compound found by searching the commercial MolPort library to check for known bioactivities.
+
 
 \subsection{Library Creation}
-Users may submit databases to be used for searches using the "create" area on the main page. Creating databases
-If a user chooses to proceed as a guest, no private databases may be submitted and public databases the user submits have a maximum size of 10,000 conformers. If the user creates an account and logs in, the user may create one private database with at most 1,000,000 conformers and public databases the user submits may have at most 10,000,000 conformers. The database files should be in SMILES or sdf format. Conformers will be automatically generated from SMILES strings, but the structures contained in the sdf files will be used directly and should therefore be created using a high quality conformer generator. File sizes are capped at 200MB, so submitting a compressed file is recommended. The number of permitted conformers in a database may be extended by emailing a short justification to dkoes@pitt.edu. 
-Database submission form
+
+Users may submit their own libraries for screening.  In the spirit of the open access and open-source nature of Pharmit, user's are encouraged to make their submitted libraries publicly accessible, in which case they are available to all users for screening as a user contributed library.  However, registered users have the ability create a private library, as well as remove or update previously submitted libraries. 
+
+In order to create a library, compounds may be provided in 2D SMILES format, in which case RDKit (\url{rdkit.org}) and the UFF force field \cite{Rappe_1992} are used to generate up to 10 3D conformers for each compound.  This approach has been shown to generate high quality conformations \cite{Ebejer_2012}.  Alternatively, the user may provide compounds in the 3D SDF format, in which case the provided structures are assumed to be valid conformers and are used directly.
