@@ -40,6 +40,7 @@ MAIN_TEMPLATE = r"""
 
 \end{{abstract}}
 
+
 {sectioninputs}
 
 \bibliography{{{bibloc}}}{{}}
@@ -200,6 +201,10 @@ def build_authorea_latex(localdir, builddir, latex_exec, bibtex_exec, outname,
                 sectioninputs.append(get_figure_string(ls, localdir))
             else:
                 sectioninputs.append(get_input_string(ls, localdir))
+                
+    #for NAR - need this is the second column of the first page
+    sectioninputs.insert(1,'\enlargethispage{-65.1pt}')
+
     sectioninputs = '\n'.join(sectioninputs)
 
     maintexstr = MAIN_TEMPLATE.format(**locals())
