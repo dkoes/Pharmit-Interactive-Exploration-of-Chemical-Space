@@ -1,7 +1,7 @@
 Abstract.tex
 section_Introduction_There_are_a__.tex
 section_Compound_Libraries_Unique_to__.tex
-section_Query_Definition_As_a__.tex
+section_Query_Definition_subsection_Inputs__.tex
 section_Search_search_modality_differences__.tex
 section_Energy_Minimization_cite_smina__.tex
 section_Discussion_annotations_and_iterative__.tex
