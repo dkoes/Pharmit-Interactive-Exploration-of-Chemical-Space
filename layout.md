@@ -1,10 +1,10 @@
 Abstract.tex
 section_Introduction_There_are_a__.tex
 section_Compound_Libraries_Unique_to__.tex
+figures/pharmFig/pharmFig.png
 section_Query_Definition_subsection_Inputs__.tex
 section_Visualization_The_visualization_scheme__.tex
 section_Search_Pharmit_provides_two__.tex
-figures/pharmFig/pharmFig.png
 figures/shapeVis1/shapeVis1.png
 section_Energy_Minimization_The_query__.tex
 section_Discussion_Pharmit_represents_a__.tex
