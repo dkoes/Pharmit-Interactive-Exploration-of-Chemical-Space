@@ -1,7 +1,7 @@
 Abstract.tex
 section_Introduction_There_are_a__.tex
-section_Compound_Libraries_Unique_to__.tex
 figures/pharmFig/pharmFig.png
+section_Compound_Libraries_Unique_to__.tex
 section_Query_Definition_subsection_Inputs__.tex
 figures/shapeVis1/shapeVis1.png
 section_Visualization_The_visualization_scheme__.tex
