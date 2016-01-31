@@ -4,6 +4,7 @@ section_Compound_Libraries_Unique_to__.tex
 section_Query_Definition_subsection_Inputs__.tex
 section_Visualization_The_visualization_scheme__.tex
 section_Search_Pharmit_provides_two__.tex
+figures/shapeVis/shapeVis.png
 section_Energy_Minimization_The_query__.tex
 section_Discussion_Pharmit_is_amazing__.tex
 section_Funding_This_work_is__.tex
