@@ -7,6 +7,6 @@ section_Search_Pharmit_provides_two__.tex
 figures/pharmFig/pharmFig.png
 figures/shapeVis1/shapeVis1.png
 section_Energy_Minimization_The_query__.tex
-section_Discussion_Pharmit_is_amazing__.tex
+section_Discussion_Pharmit_represents_a__.tex
 section_Funding_This_work_is__.tex
 section_Acknowledgements_We_thank_Charles__.tex
