@@ -1,8 +1,16 @@
 \section{Search}
 
-search modality - differences
+Pharmit provides two search modalities depending on whether the pharmacophore or search query is the primary query.
+
+\subsection{Pharmacophore/Shape Search}
+
+If the primary query is the pharmacophore query, the selected database searched for compounds that match the specified pharmacophore using the Pharmer \cite{Koes_2011} search technology.  Results are aligned to the pharmacophore to minimize the root mean squared deviation (RMSD) between the query features and the hit compound features.  If a shape query is also present, then the shape constraints are applied to the pharmacophore aligned pose.  In this modality, only heavy atom centers are compared to the shape constraints.  That is, the pharmacophore-aligned results are filtered to ensure that hits have at least one heavy atom center that falls within the inclusive shape and no heavy atom center that falls within the exclusive shape.  With this modality, the exclusive shape is generally the most useful, as it provides a way to eliminate compounds that match the pharmacophore but have significant steric clashes with the receptor.
+Due to the importance and increased specificity of the interactions specified by a pharmacophore, pharmacophore search followed by shape filtering is the default and recommend search modality.
+
+\subsection{Shape/Pharmacophore Search}
+
 \cite{matchpack}
-\cite{Koes_2011}
+
  The shape constraint is applied differently depending on whether it is used to search the database prior to pharmacophore filtering or to filter results returned by a pharmacophore search. In the former case, a shape search returns molecules in the search database that contain the entire included shape and do not overlap any part of the excluded shape. In the latter case, the results of the pharmacophore search are filtered by shape to ensure that at least one heavy atom falls within the inclusive shape and no heavy atom centers fall within any exclusive shape. In either case, the results of the initial search are aligned to that search for the secondary filtering - thus for a given molecule a pose may exist that allows it to meet the secondary filter, but it will not be returned if the aligned pose resulting from the initial search does not meet those constraints. Our recommendation is that users define both inclusive and exclusive shape constraints using the ligand and receptor surfaces and use them as secondary filtering on the results of a pharmacophore search. The order of application of pharmacophore and shape constraints can be swapped using the second button from the top of the left sidebar, which switches between "Pharmacophore Search → Shape Filter" and "Shape Search → Pharmacophore Filter".
  
 \subsection{Filters}
