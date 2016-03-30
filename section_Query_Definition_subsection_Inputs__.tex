@@ -12,6 +12,8 @@ As shown in Figure~\ref{pharmfig}, a pharmacophore query specifies these feature
 
 Pharmit will identify all pharmacophore features present in a provided ligand structure. If a receptor structure is provided, it will identify which of these features are relevant to the protein-ligand interaction using distance cutoffs between corresponding features on the receptor and ligand (e.g., a hydrogen donor on the ligand and acceptor on the receptor). Only the interacting features will be enabled. Alternatively, a pharmacophore query can be initialized using pharmacophore files in MOE \cite{moe}, LigBuilder \cite{Wang_2000}, LigandScout \cite{Wolber_2005}, PharmaGist \cite{Schneidman_Duhovny_2008} or Pharmer \cite{Koes_2011} query formats.  The features of the query can be interactively edited within the Pharmit interface as changes to the query editor are immediately reflected in the molecular viewer and clicking on a feature in the viewer selects it for editing, as shown in Figure~\ref{pharmfig}.
 
+The Pharmit search is implemented using the Pharmer algorithm \cite{Koes 2011}, similar to the earlier project, ZINCPharmer \cite{Koes 2012}.  Pharmer was independently validated and its performance was compared with other methods in \cite{Sanders 2012}.
+
 
 \subsection{Shape Queries}
 
