@@ -9,6 +9,7 @@ figures/minmized/minmized.png
 section_Visualization_The_visualization_scheme__.tex
 section_Search_Pharmit_provides_two__.tex
 section_Energy_Minimization_The_query__.tex
+section_Example__.tex
 section_Discussion_Pharmit_represents_a__.tex
 section_Funding_This_work_is__.tex
 section_Acknowledgements_We_thank_Charles__.tex
