@@ -4,7 +4,7 @@ figures/pharmFig/pharmFig.png
 section_Compound_Libraries_Unique_to__.tex
 figures/shapeVis1/shapeVis1.png
 section_Query_Definition_subsection_Inputs__.tex
-figures/unminimized/fig3a.png
+figures/unminimized/Screen Shot 2016-04-04 at 10.53.36 PM.png
 figures/minmized/fig3b.png
 section_Visualization_The_visualization_scheme__.tex
 section_Search_Pharmit_provides_two__.tex
