@@ -1,6 +1,6 @@
 Abstract.tex
 section_Introduction_There_are_a__.tex
-figures/pharmFig/pharmFig.png
+figures/pharmFig/Screen Shot 2016-04-05 at 9.59.34 AM.png
 section_Compound_Libraries_Unique_to__.tex
 figures/shapeVis1/shapeVis1.png
 section_Query_Definition_subsection_Inputs__.tex
